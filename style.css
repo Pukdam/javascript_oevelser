@@ -29,3 +29,7 @@ footer {
   border-color: black;
   text-align: center;
 }
+
+article:nth-child(2) {
+  color: lime;
+}
