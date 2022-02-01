@@ -5,23 +5,22 @@ header {
 }
 
 section {
+  max-width: 1000px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
 }
 
 h2 {
-  margin-left: 2.5%;
 }
 
 article {
   border-style: solid;
   border-color: black;
   margin: 5%;
-  margin-top: 0%;
 }
 
-p {
-  margin: 3%;
+img {
+  max-width: 445px;
 }
 
 footer {
