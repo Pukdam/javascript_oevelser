@@ -41,6 +41,9 @@
       const header = document.querySelector("header");
       console.log(header);
 
+      /*Øvelse 2B, udskift teksten i titlen via JavaScript. Udskift tekst og overskrifter i de to article elementer via javaScript.*/
+
+      /*Her har jeg udskiftet titlen*/
       const rubrik = document.querySelector("h1");
       rubrik.textContent;
       console.log(rubrik.textContent);
@@ -56,9 +59,19 @@
       const sektion = document.querySelector("section");
       console.log(sektion);
 
+      /*Her har jeg udskiftet tekst og overskrifter i de to articles*/
+
+      const artikel1 = document.querySelector("article:nth-child(1) h3");
+      console.log(artikel1);
+      artikel1.textContent = "Dims!";
+
       const artikel1 = document.querySelector("article:nth-child(1) p");
       console.log(artikel1);
       artikel1.textContent = "Her er et billede af noget dims";
+
+      const artikel2 = document.querySelector("article:nth-child(1) h3");
+      console.log(artikel2);
+      artikel2.textContent = "Dut!";
 
       const artikel2 = document.querySelector("article:nth-child(2) p");
       console.log(artikel2);

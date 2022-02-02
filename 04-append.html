@@ -66,17 +66,28 @@
       billede2.src = "Kat2.PNG";
       billede2.alt = "Kat2";
 
+      /*Øvelse 4, opret et nyt article element med creatElement. Tilføj en overskrift og noget tekst til den nye article. Indsæt de nye elementer efter eksisterende article elementer (appendChild)*/
       /*Nyt article element*/
       let mainSection = document.querySelector("section");
       /*Nyt h3 element*/
       let newArticle = document.createElement("article");
       let overskrift = document.createElement("h3");
-      /*Tkest til overskrift*/
+      /*Tekst til overskrift*/
       let overskriftText = document.createTextNode("Article 3");
       /*Indsæt tekst i overskrift*/
       overskrift.appendChild(overskriftText);
       /*Tilføj overskrift til article*/
       newArticle.appendChild(overskrift);
+      /*Tilføj article til section*/
+      mainSection.appendChild(newArticle);
+
+      let tekst = document.createElement("p");
+      /*Tekst til p*/
+      let pTekst = document.createTextNode("lorem ipsum lorem ipsum.");
+      /*Indsæt tekst i p*/
+      tekst.appendChild(pTekst);
+      /*Tilføj p til article*/
+      newArticle.appendChild(tekst);
       /*Tilføj article til section*/
       mainSection.appendChild(newArticle);
 
