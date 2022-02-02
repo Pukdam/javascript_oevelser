@@ -56,13 +56,15 @@
       const sektion = document.querySelector("section");
       console.log(sektion);
 
-      const artikel1 = document.querySelector("article:nth-child(1) p");
-      console.log(artikel1);
-      artikel1.textContent = "Her er et billede af noget dims";
+      const billede1 = document.querySelector("article:nth-child(1) img");
+      console.log(billede1);
+      billede1.src = "Kat1.JPG";
+      billede1.alt = "Kat1";
 
-      const artikel2 = document.querySelector("article:nth-child(2) p");
-      console.log(artikel2);
-      artikel2.textContent = "Her er et billede af noget andet dims";
+      const billede2 = document.querySelector("article:nth-child(2) img");
+      console.log(billede2);
+      billede2.src = "Kat2.PNG";
+      billede2.alt = "Kat2";
 
       const billede = document.querySelector("img");
       console.log(billede);
